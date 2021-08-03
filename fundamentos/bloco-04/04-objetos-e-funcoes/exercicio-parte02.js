@@ -170,17 +170,32 @@ console.log('resultado: ', calculaRomano('MCMXCIX'));
 function vetorDePar(vector) {
   let array1 = [];
   vector.forEach((elemento) => {
-    elemento.forEach(elemento2=>{
-      if(elemento2 % 2 == 0){
-        array1 += elemento2;
+    elemento.forEach(elemento2 => {
+      if (elemento2 % 2 == 0) {
+        array1.push(elemento2);
       }
     });
   });
-  return array1.split('');
+  return array1;
 }
 
 let vector = [[1, 2], [3, 4, 5, 6], [7, 8, 9, 10]];
 console.log(vetorDePar(vector));
+
+//eu nao tinha achado o flat antes, mas na monitoria o monitor me falou do flat, entao eu nao preciso de fazer o nesting
+
+function vetorDePar2(vector) {
+  let array1 = [];
+  vector.flat().forEach((elemento) => {
+    if (elemento % 2 == 0) {
+      array1.push(elemento);
+    }
+
+  });
+  return array1;
+}
+
+console.log(vetorDePar2(vector));
 
 
 
@@ -204,27 +219,27 @@ const basket = [
   'Banana', 'Pera', 'Abacate', 'Uva',
 ];
 
-let basketZin =  ['Melancia', 'Abacate', 'Melancia', 'Melancia', 'Uva'];
+let basketZin = ['Melancia', 'Abacate', 'Melancia', 'Melancia', 'Uva'];
 
-function basketF(basket, string = ' '){
+function basketF(basket, string = ' ') {
   let pos = basket[0];
-  let arrayBasket = basket.filter((fruta,_basket)=>{
-    if(fruta == pos)
-     return fruta;
+  let arrayBasket = basket.filter((fruta, _basket) => {
+    if (fruta == pos)
+      return fruta;
   });
   let numeroDeItem = arrayBasket.length;
-  let arrayBasketSem = basket.filter((fruta,_basket)=>{
-    if(fruta != pos)
-    return fruta;
+  let arrayBasketSem = basket.filter((fruta, _basket) => {
+    if (fruta != pos)
+      return fruta;
   });
 
 
-  if(numeroDeItem == basket.length){
+  if (numeroDeItem == basket.length) {
     string += numeroDeItem + " " + pos;
     //string += string.concat(numeroDeItem.toString(), ' ',pos.toString() );
     return string;
-  }else{
-    string+= numeroDeItem + ' ' + pos + basketF(arrayBasketSem);
+  } else {
+    string += numeroDeItem + ' ' + pos + basketF(arrayBasketSem);
     return string;
   }
 }

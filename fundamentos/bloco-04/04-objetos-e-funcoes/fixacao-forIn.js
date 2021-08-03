@@ -22,3 +22,10 @@ let car = {
 for(const key in car){
   console.log('Chave ',key,car[key]);
 }
+
+
+let palavra = 'arara';
+
+for (const letra in palavra) {
+  console.log(letra);
+}
