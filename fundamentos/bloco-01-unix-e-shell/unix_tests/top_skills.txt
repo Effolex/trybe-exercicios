@@ -1,3 +1,0 @@
-Bash
-Comer
-Css
