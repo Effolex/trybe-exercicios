@@ -7,7 +7,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ## Fundamentos do Desenvolvimento Web :white_check_mark:
 
-##### [Bloco 4: IntroduÃ§Ã£o - JavaScript](https://github.com/Effolex/trybe-exercicios/tree/fundamentos/bloco-04)
+##### Bloco 4: IntroduÃ§Ã£o - JavaScript
 
 - [x] 4-1: _JavaScript - Primeiros passos_
 - [x] 4-2: _JavaScript - Array e loop For_
