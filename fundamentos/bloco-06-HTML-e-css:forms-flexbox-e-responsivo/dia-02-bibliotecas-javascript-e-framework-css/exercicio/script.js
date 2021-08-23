@@ -1,5 +1,7 @@
 const selectEstado = document.querySelector('#select-estado');
 const buttonSubmit = document.querySelector('#submit');
+const dataDeInicio = document.querySelector('#data-de-inicio');
+
 // https://gist.github.com/edirpedro/69c0974613de044ebba6dc7fd0c5b732
 // link dos estados
 const estados = [
@@ -14,15 +16,26 @@ for (const iterator of estados) {
 }
 
 
+
 function teste(event){
   event.preventDefault();
   const formulario = document.getElementById('curriculo');
-
+  console.log(formulario);
   for (let index = 0; index < formulario.length; index++) {
     const element = formulario[index];
-    console.log('elemento:',element);
-    console.log(element.value);
+    if(element.type === 'fieldset'){
+      continue;
+    }
+    console.log(element.type);
   }
 }
 
-buttonSubmit.addEventListener('click', teste);
+buttonSubmit.addEventListener('click', teste); 
+
+
+dataDeInicio.DatePickerX.init({
+  minDate: '01/01/2000',
+  maxDate: '01/01/2021',
+  format: 'dd/mm/yyyy'
+});
+
