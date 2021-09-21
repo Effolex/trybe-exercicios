@@ -9,7 +9,7 @@ describe('A função myRemove(arr, item) recebe um array arr e retorna uma cópi
   })
   it('Verifique se o array passado por parâmetro não sofreu alterações',() => {
     const myArray = [1, 2, 3, 4];
-    myRemove(myArray, 3)
+    myRemove(myArray, 3);
     expect(myArray).toEqual([1, 2, 3, 4]);
   })
   it('Verifique se a chamada myRemove([1, 2, 3, 4], 5) retorna o array esperado',() => {
