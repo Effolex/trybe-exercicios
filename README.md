@@ -7,6 +7,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ## Fundamentos do Desenvolvimento Web :white_check_mark:
 
+
 ##### Bloco 1: Introdução - Unix & Shell
 
 - [x] 1-3: _Unix & Shell- Part 1_
@@ -27,12 +28,16 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 3-5: _[Projeto - HTML & CSS]()_
 
 ##### [Bloco 4: IntroduÃ§Ã£o - JavaScript](https://github.com/Effolex/trybe-exercicios/tree/fundamentos/bloco-04)
+=======
+##### Bloco 4: IntroduÃ§Ã£o - JavaScript
+
 
 - [x] 4-1: _JavaScript - Primeiros passos_
 - [x] 4-2: _JavaScript - Array e loop For_
 - [x] 4-3: _JavaScript - LÃ³gica de ProgramaÃ§Ã£o e Algoritmos_
 - [x] 4-4: _JavaScript - Objetos e funÃ§Ãµes_
 - [ ] 4-5: _[Projeto - Playground Functions]()_
+
 
 ##### Bloco 5: IntroduÃ§Ã£o - JavaScript - Projetos
 
@@ -251,3 +256,6 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 35-3: _Entrada e SaÃ­da de dados_
 - [ ] 36-4: _Entrada e SaÃ­da de dados_
 - [ ] 35-5: _[Projeto - Tech news]()_
+=======
+## [Voltar para a lista de conteudos](https://github.com/Effolex/trybe-exercicios/tree/geral)
+
