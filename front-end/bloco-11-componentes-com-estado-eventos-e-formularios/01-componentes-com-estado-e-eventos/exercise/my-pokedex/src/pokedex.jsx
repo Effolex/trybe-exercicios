@@ -7,11 +7,15 @@ export default class Pokedex extends React.Component {
   constructor() {
     super();
     this.state = {
-      pokeList: pokemons.map((element) => (<Pokemon pokemon={element} />)),
+      pokeList: '',
     }
     this.handleSearch = this.handleSearch.bind(this);
   }
   
+  componentDidMount() {
+    this.setState({pokeList:  pokemons.map((element) => (<Pokemon pokemon={element} />))})
+  }
+
   handleSearch(event) {
     const caracters = event.target.value.toLowerCase();
     const list = pokemons.filter((pokemon) => pokemon.name.toLowerCase().includes(caracters));
