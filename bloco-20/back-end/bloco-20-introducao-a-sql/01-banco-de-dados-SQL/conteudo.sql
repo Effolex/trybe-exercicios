@@ -19,6 +19,11 @@ ORDER BY last_name ASC, first_name DESC;
 # Vá até a tabela language do sakila e crie uma pesquisa que mostre os 5 idiomas cadastrados , mas não mostre o idioma english .
 SELECT name FROM sakila.language LIMIT 5 OFFSET 1;
 
+# Agora vamos tentar fazer o seguinte: Crie uma query para encontrar os 20 primeiros filmes , incluindo o título , o ano de lançamento , a duração , a classificação indicativa e o custo de substituição . Ordene os resultados pelos filmes com a maior duração e depois pelo menor custo de substituição.
+SELECT title, release_year, length, rating, replacement_cost FROM sakila.film 
+ORDER BY length DESC, replacement_cost ASC
+LIMIT 20;
+
 
 
 
