@@ -13,6 +13,9 @@ SELECT DISTINCT last_name FROM sakila.actor;
 # Quantos sobrenomes únicos temos na tabela?
 SELECT COUNT(DISTINCT last_name) FROM sakila.actor
 
+# Ordene os valores na tabela em ordem crescente de sobrenomes e em ordem decrescente de nome.
+ORDER BY last_name ASC, first_name DESC;
+
 
 
 
