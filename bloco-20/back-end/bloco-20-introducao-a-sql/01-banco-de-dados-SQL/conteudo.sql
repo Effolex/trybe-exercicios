@@ -7,6 +7,9 @@ SELECT title, release_year, rating FROM sakila.film;
 # Quantos filmes temos cadastrados?
 SELECT COUNT(*) FROM sakila.film;
 
+# Escreva uma query que exiba apenas os sobrenomes únicos cadastrados.
+SELECT DISTINCT last_name FROM sakila.actor;
+
 
 
 
