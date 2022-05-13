@@ -1,0 +1,42 @@
+
+
+div:hover {
+  border-style: solid;
+}
+
+div:hover h3{
+    font-family: Tahoma, Verdana, sans-serif;
+    font-family: 'Zen Loop', cursive;
+}
+
+/* eu poderia ter usado classes
+ou ids mas eu queria testar outras
+formas de se realizar a mesma coisa*/
+/*primeira aparição do tipo div*/
+div:first-of-type{
+    color: blue;
+    font-family:monospace;
+    
+}
+
+/*div de index X, nesse exemplo, segunda div,
+avisando que isso é pra quando não se é filho
+caso seja div dentro de div, existem outras formas*/
+div:nth-of-type(2){
+    color: red;
+}
+
+/*de forma manual, qual a posição que quero
+ex daqui, terceira posição, 
+mesma coisa que fazer: div:nth-of-type(3)*/
+div ~ div ~ div {
+    color: brown;
+}
+/*mesma logica do de cima*/
+div ~ div ~ div ~ div {
+    color: black
+}
+/*ultima aparicao do tipo div*/
+div:last-of-type {
+    color: yellow;
+}
