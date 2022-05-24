@@ -1,4 +1,5 @@
 import { RequestHandler } from "express";
+import { ITournaments } from "../schemas/TournamentSchema";
 import TournamentService from "../services/TournamentService";
 
 class TournamentController {
@@ -14,6 +15,17 @@ class TournamentController {
         return res.status(404).json({ message: 'No data found!'})
       }
       return res.status(200).json(tournaments);
+    } catch (error) {
+      return res.status(500).send({ message: this.internalError });
+    }
+  }
+
+  public create:RequestHandler = async (req, res, _next) => {
+    try {
+      const mundial = req.body as ITournaments;
+      const tournaments = await this.service.create(mundial);
+
+      return res.status(201).json(tournaments);
     } catch (error) {
       return res.status(500).send({ message: this.internalError });
     }

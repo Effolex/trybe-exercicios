@@ -11,6 +11,11 @@ class TournamentModel {
       ? this.model.find() : this.model.find({ ...params });
     return tournaments;
   }
+
+  public create = async (dataToInsert: ITournaments): Promise<ITournaments> => {
+    const createdTournament = this.model.create(dataToInsert);
+    return createdTournament;
+  }
 }
 
 export default TournamentModel;

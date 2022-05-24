@@ -8,6 +8,12 @@ class TournamentService {
     const tournaments = this.model.getTournaments(params);
     return tournaments;
   }
+
+  public create = async (dataToInsert: ITournaments): Promise<ITournaments> => {
+    const createdTournament = this.model.create(dataToInsert);
+    return createdTournament;
+  }
+  
 }
 
 export default TournamentService;
