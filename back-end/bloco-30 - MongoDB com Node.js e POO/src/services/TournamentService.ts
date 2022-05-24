@@ -18,6 +18,11 @@ class TournamentService {
     const createdTournament = this.model.update(dataToInsert, id);
     return createdTournament;
   }
+
+  public destroy = async (year: string): Promise<ITournaments> => {
+    const createdTournament = this.model.destroy(year);
+    return createdTournament;
+  }
   
 }
 

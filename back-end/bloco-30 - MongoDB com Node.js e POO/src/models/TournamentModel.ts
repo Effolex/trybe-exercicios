@@ -21,6 +21,11 @@ class TournamentModel {
     const createdTournament = this.model.updateOne({ _id: id }, { ...dataToInsert }, { new: true });
     return createdTournament as unknown as ITournaments;
   }
+
+  public destroy = async (year: string): Promise<ITournaments> => {
+    const createdTournament = this.model.deleteOne({ year });
+    return createdTournament as unknown as ITournaments;
+  }
 }
 
 export default TournamentModel;

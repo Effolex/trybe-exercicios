@@ -43,6 +43,18 @@ class TournamentController {
       return res.status(500).send({ message: this.internalError });
     }
   }
+
+  public destroy:RequestHandler = async (req, res, _next) => {
+    try {
+      const { year } = req.body;
+      const tournaments = await this.service.destroy(year);
+
+      return res.status(201).json(tournaments);
+    } catch (error) {
+      console.log('🚀error', error)
+      return res.status(500).send({ message: this.internalError });
+    }
+  }
 }
 
 export default TournamentController;
