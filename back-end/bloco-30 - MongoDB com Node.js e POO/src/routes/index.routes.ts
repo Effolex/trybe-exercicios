@@ -6,5 +6,6 @@ const routes = Router();
 
 routes.get('/tournaments', tournamentController.getTournaments);
 routes.post('/tournaments', tournamentController.create);
+routes.patch('/tournaments', tournamentController.update);
 
 export default routes;

@@ -13,6 +13,11 @@ class TournamentService {
     const createdTournament = this.model.create(dataToInsert);
     return createdTournament;
   }
+
+  public update = async (dataToInsert: ITournaments, id: string): Promise<ITournaments> => {
+    const createdTournament = this.model.update(dataToInsert, id);
+    return createdTournament;
+  }
   
 }
 

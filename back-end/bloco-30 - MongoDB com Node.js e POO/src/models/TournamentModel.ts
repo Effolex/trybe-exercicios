@@ -16,6 +16,11 @@ class TournamentModel {
     const createdTournament = this.model.create(dataToInsert);
     return createdTournament;
   }
+
+  public update = async (dataToInsert: ITournaments, id: string): Promise<ITournaments> => {
+    const createdTournament = this.model.updateOne({ _id: id }, { ...dataToInsert }, { new: true });
+    return createdTournament as unknown as ITournaments;
+  }
 }
 
 export default TournamentModel;
