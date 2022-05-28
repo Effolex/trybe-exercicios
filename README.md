@@ -109,7 +109,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 14-1: _Metodologias Ãgeis_
 - [ ] 14-2: _[Projeto - Frontend Online Store]()_
 
-##### [Bloco 15: Testes em React](https://github.com/Effolex/trybe-exercicios/tree/geral/front-end)
+##### [Bloco 15: Testes em React](https://github.com/Effolex/trybe-exercicios/tree/geral/front-end/bloco-15%20-%20Gerenciamento%20de%20estado%20com%20redux)
 
 - [ ] 15-1: _Testando React com a React Testing Library_
 - [ ] 15-2: _Testando React com a React Testing Library - Parte 2_
