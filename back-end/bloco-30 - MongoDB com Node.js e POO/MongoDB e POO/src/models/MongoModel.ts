@@ -1,4 +1,4 @@
-import { Model as M, Document, UpdateWriteOpResult, modelNames } from 'mongoose';
+import { Model as M, Document, UpdateWriteOpResult } from 'mongoose';
 import Model from '.';
 import { DeleteResult } from 'mongodb';
 
@@ -20,4 +20,4 @@ abstract class MongoModel<T> implements Model<T> {
   
 }
 
-export default modelNames;
+export default MongoModel;
