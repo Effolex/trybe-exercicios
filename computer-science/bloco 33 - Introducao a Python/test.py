@@ -29,3 +29,19 @@ def printSquare(size):
   arr = [ '*' for i in range(size)]
   for i in range(size):
     print(''.join(arr))
+
+'''
+  Exercício 4:
+  Crie uma função que receba uma lista de nomes
+  e retorne o nome com a maior quantidade de caracteres.
+  Por exemplo, para ["José", "Lucas", "Nádia", "Fernanda", "Cairo", "Joana"],
+  o retorno deve ser "Fernanda".
+'''
+
+def biggestName(names):
+  biggest = ''
+  for name in names:
+    if len(name) > len(biggest):
+      biggest = name
+  return biggest
+
