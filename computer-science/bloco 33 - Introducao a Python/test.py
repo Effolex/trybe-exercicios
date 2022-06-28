@@ -45,3 +45,23 @@ def biggestName(names):
       biggest = name
   return biggest
 
+'''
+  Exercício 5:
+  Considere que a cobertura da tinta é de 1 litro para cada
+  3 metros quadrados e que a tinta é vendida em latas de 18
+  litros, que custam R$ 80,00. Crie uma função que retorne
+  dois valores em uma tupla contendo a quantidade de latas
+  de tinta a serem compradas e o preço total a partir do
+  tamanho de uma parede(em m²).
+'''
+
+def price(wall):
+  cansNeeded = 1
+  littersNeeded = wall/3
+  while True:
+    if littersNeeded <= (cansNeeded*18):
+      return [ cansNeeded, cansNeeded*80 ]
+    cansNeeded += 1
+
+
+print(price(55))
